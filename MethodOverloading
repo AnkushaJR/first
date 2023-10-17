@@ -1,0 +1,22 @@
+class Travel{
+	String dest;
+	int dist;
+	void Trip(String dest,int dist) {
+		System.out.println("reached "+dest+" of kilometer "+dist);
+	}
+	void Trip(int dist,String dest) {
+		System.out.println("reached "+dest+" of kilometer "+dist);
+	}
+	void Trip(String dest,int dist,String resort) {
+		System.out.println("reached the "+dest+" of kilometer "+dist+" staying in"+resort);
+	}
+}
+public class Overload {
+	public static void main(String args[]) {
+		Travel t=new Travel();
+		t.Trip("mangalore", 150);
+		t.Trip(230,"chickmangalore");
+		t.Trip("coorg",130,"deepu palace");
+	}
+
+}
