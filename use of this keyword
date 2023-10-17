@@ -1,0 +1,21 @@
+public class BankData {
+	int balance;
+	int amount;
+	BankData(int balance,int amount){
+		this.balance=balance;
+		this.amount=amount;
+		this.deposit();
+		this.withdraw();
+	}
+	void deposit() {
+			int newbalance=balance+amount;
+			System.out.println("Balance:"+newbalance);
+	}
+	void withdraw() {
+			int newbalance=balance-amount;
+			System.out.println("Balance:"+newbalance);
+	}
+public static void main(String args[]) {
+	new BankData(10000,300);
+	}
+}
